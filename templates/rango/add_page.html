@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Rango</title>
-    </head>
+    {% block title_block %}
+    {% if category %}
+    {{ category.name }}
+ {% else %}
+     Unknown Category
+ {% endif %}
+{% endblock %}
+{% block body_block %}
 
     <body>
         <h1>Add a Page to {{ category.name }}</h1>
