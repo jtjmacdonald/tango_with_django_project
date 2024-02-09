@@ -14,22 +14,20 @@
                 {% if pages %}
                 <ul>
                     {% for page in pages %}
-                    <li>
-                        <a href="{{ page.url }}">>{{ page.title }}</a>
-                    </li>
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}
                 </ul>
                 {% else %}
-                <strong>No pages currently in category</strong>
+                <strong>No pages currently in category.</strong>
                 {% endif %}
             {% else %}
-                The specified category does no texist.
+                The specified category does not exist.
             {% endif %}
         </div>
     </body>
 
     <div>
-        <a href="/rango/">index</a><br />z
+        <a href="/rango/">index</a><br>
         <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango "/>
     </div>
 
